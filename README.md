@@ -1,4 +1,4 @@
 # Team-Web-Project
-This project consists of Gabe Carper and Aidan Atanosian
+This project consists of Gabe Carper, Aidan Atanosian, and Biden McHao Jr.
 
-Test by Team Captin
+Test by Team Captain
