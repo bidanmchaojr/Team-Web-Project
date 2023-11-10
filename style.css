@@ -1,4 +1,8 @@
 p {
     font-size:45px;
-    border-width:5px;
+    border: 5px solid
+
+}
+img {
+    width:800px;
 }
