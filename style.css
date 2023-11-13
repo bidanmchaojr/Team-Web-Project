@@ -1,7 +1,12 @@
 body {
   background-image: url("images/bakcground.JPG");
 background-repeat:no-repeat;
-background-size:cover;
+background-size:2000px;
+}
+.bear-page {
+background-image: url("images/bearsforest.jpg");
+background-repeat: no-repeat;
+background-size:10000px;
 }
 
 
@@ -9,6 +14,7 @@ background-size:cover;
   font-size:45px;
   border: 5px inset;
   width:25%;
+  background-color:white;
 }
 img {
   width:800px;
@@ -52,6 +58,7 @@ width:1200px;
   color:crimson;
   border: 5px inset;
   width:50%;
+  background-color:white;
 }
 
 
