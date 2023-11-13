@@ -45,6 +45,12 @@ width:1200px;
     color: white;
   }
   
-
+.HallOfFame {
+  font-size:100px;
+  font-family: Helvetica;
+  color:crimson;
+  border: 5px inset;
+  width:50%;
+}
 
 
