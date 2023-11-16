@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Memory Card Game</title>
+  <link rel = "stylesheet" type="text/css" href="style.css">
+    <center><a class="active" href="home.html">Back</a></center>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f0f0f0;
+    }
+
+    #memory-game {
+      display: grid;
+      grid-template-columns: repeat(8, 80px);
+      gap: 10px;
+    }
+
+    .card {
+      width: 80px;
+      height: 80px;
+      background-color: #ddd;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 20px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div id="memory-game"></div>
+
+  <script>
+    const cards = ['😡', '🤕', '👻', '👽', '💩', '🦵', '👨‍💻', '👰', '🧙', '👂🏻', '🧛🏾‍♂️', '🧑🏾‍🍼', '🐁', '🐀', '🎷', '🍗', '😡', '🤕', '👻', '👽', '💩', '🦵', '👨‍💻', '👰', '🧙', '👂🏻', '🧛🏾‍♂️', '🧑🏾‍🍼', '🐁', '🐀', '🎷', '🍗'];
+    let flippedCards = [];
+    let matchedCards = [];
+
+    function shuffle(array) {
+      for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+      }
+    }
+
+    function createCard(index) {
+      const card = document.createElement('div');
+      card.classList.add('card');
+      card.dataset.index = index;
+      card.addEventListener('click', handleCardClick);
+      return card;
+    }
+
+    function initializeGame() {
+      shuffle(cards);
+      const memoryGame = document.getElementById('memory-game');
+
+      for (let i = 0; i < cards.length; i++) {
+        const card = createCard(i);
+        memoryGame.appendChild(card);
+      }
+    }
+
+    function handleCardClick() {
+      const selectedCard = this;
+      const index = selectedCard.dataset.index;
+
+      // Ignore clicks on matched cards or flipped cards
+      if (matchedCards.includes(index) || flippedCards.length === 2) {
+        return;
+      }
+
+      selectedCard.textContent = cards[index];
+      flippedCards.push(selectedCard);
+
+      if (flippedCards.length === 2) {
+        setTimeout(checkForMatch, 500);
+      }
+    }
+
+    function checkForMatch() {
+      const [card1, card2] = flippedCards;
+      const index1 = card1.dataset.index;
+      const index2 = card2.dataset.index;
+
+      if (cards[index1] === cards[index2]) {
+        matchedCards.push(index1, index2);
+        if (matchedCards.length === cards.length) {
+          alert('Congratulations! You matched all the cards!');
+          resetGame();
+        }
+      } else {
+        // Flip the cards back after a short delay
+        setTimeout(() => {
+          card1.textContent = '';
+          card2.textContent = '';
+        }, 500);
+      }
+
+      flippedCards = [];
+    }
+
+    function resetGame() {
+      flippedCards = [];
+      matchedCards = [];
+      const memoryGame = document.getElementById('memory-game');
+      memoryGame.innerHTML = '';
+      initializeGame();
+    }
+
+    initializeGame();
+  </script>
+</body>
+</html>
