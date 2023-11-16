@@ -23,13 +23,13 @@ background-size:10000px;
   width:25%;
   background-color:white;
 }
-img {
+img.animal {
   width:800px;
   border: 5px dashed purple;
   transition: height 2s, width 2s;
 }
 
-img:hover{
+img.animal:hover{
 width:1200px;
 }
 
@@ -99,4 +99,27 @@ button {
 .game-info{
   margin-top:30px;
 }
-
+.game-pic {
+  width:500px;
+  border: 3px solid black;
+}
+.snake-pic{
+  width:500px;
+  height:200px;
+  border: 3px solid black;
+}
+.snake-pic:hover {
+  filter:contrast(200%);
+}
+.game-pic:hover{
+  filter:contrast(200%);
+}
+.game-title{
+  font-family: sans-serif;
+  color:Red;
+  font-style: italic;
+}
+.game-header{
+  font-size:60px;
+  color:black;
+}
