@@ -36,10 +36,12 @@ width:1200px;
 .topnav {
     background-color: #333;
     overflow: hidden;
-    display:block;
-    margin-top:-550px;
   }
-  
+
+  #gamenav{
+    display:block;
+    margin-top:-545px;
+  }
   
   .topnav a {
     float: left;
