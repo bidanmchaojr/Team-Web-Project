@@ -145,7 +145,7 @@
         }
       };
 
-      setInterval(moveCar, 40);
+      setInterval(moveCar, 16);
     }, carInterval);
 
     setInterval(() => {
@@ -153,7 +153,7 @@
       scoreElement.textContent = `Score: ${score}`;
 
       // Increase car speed and decrease car spawn interval
-      carSpeed += 1w;
+      carSpeed += 0.1;
       carInterval = Math.max(100, carInterval - 100);
     }, 1000);
 
