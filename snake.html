@@ -14,7 +14,6 @@
   <title>Snake Game</title>
   <style>
     body {  
-      background-color:white;
       justify-content: center;
       align-items: center;
       height: 100vh;
@@ -22,7 +21,8 @@
       background-color: #f0f0f0;
     }
     canvas {
-      border: 1px solid #ccc;
+      border: 5px solid black;
+      width:750px;
     }
   </style>
 </head>
@@ -69,7 +69,7 @@
     else if (direction === "right") head.x++;
 
     // Check for collisions with walls
-    if (head.x < 0 || head.x >= canvas.width / gridSize || head.y < 0 || head.y >= canvas.height / gridSize) {
+    if (head.x < -1 || head.x > canvas.width / gridSize || head.y < -1 || head.y > canvas.height / gridSize) {
       alert("Game Over! You hit the wall.");
       resetGame();
       return;
