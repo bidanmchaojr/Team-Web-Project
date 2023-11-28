@@ -63,6 +63,14 @@ width:1200px;
     color: white;
   }
   
+@keyframes rgb {
+  from{
+    filter:hue-rotate(0deg);
+}
+to{
+    filter:hue-rotate(360deg);
+}
+}
 .HallOfFame {
   font-size:100px;
   font-family: Helvetica;
@@ -70,15 +78,17 @@ width:1200px;
   border: 5px inset;
   width:50%;
   background-color:white;
+  animation: rgb 5s forwards;
+  animation-iteration-count:infinite;
 }
 
 #current {
   background-color:gold;
   border-color:gold;
-  transition: transform 1s;
+  transition: transform 10s linear;
 }
 #current:active {
-  transform: rotate(1080deg);
+  transform: rotate(21600deg);
 }
 canvas {
   border:1px solid #d3d3d3;
