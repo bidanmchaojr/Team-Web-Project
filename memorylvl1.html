@@ -44,7 +44,7 @@
   <div id="memory-game"></div>
   <button><a href="memorylvl2.html">Next Level</button>
   <script>
-    const cards = ['😡', '🤕', '👻', '👽', '💩', '🦵', '😡', '🤕', '👻', '👽', '💩', '🦵',];
+    const cards = ['🍌', '🌭', '🥜', '🍎', '🥛', '🍅', '🍌', '🌭', '🥜', '🍎', '🥛', '🍅',];
     let flippedCards = [];
     let matchedCards = [];
 
@@ -98,7 +98,7 @@
       if (cards[index1] === cards[index2]) {
         matchedCards.push(index1, index2);
         if (matchedCards.length === cards.length) {
-          alert('Congratulations! You matched all the cards! Go to the next level at the bottom of the page</a>');
+          alert('Congratulations! You matched all the cards! Go to the next level at the bottom of the page');
           resetGame();
         }
       } else {
