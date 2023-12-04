@@ -23,6 +23,14 @@ background-size:10000px;
   width:25%;
   background-color:white;
 }
+.home-header {
+  font-size:100px;
+  color:green;
+  font-family:monospace;
+  font-style:bold;
+  margin-top:50px;
+
+}
 img.animal {
   width:800px;
   border: 5px dashed purple;
@@ -90,56 +98,14 @@ to{
 #current:active {
   transform: rotate(21600deg);
 }
-canvas {
-  border:1px solid #d3d3d3;
-  background-color: #f1f1f1;
-  width:800px;
-  padding-left: 0;
-  padding-right: 0;
-  margin-left: auto;
-  margin-right: auto;
-  display:block;
-  margin-top:100px;
-}
-button {
-  width:50px;
-  height:50px;
-  margin-top:600px
-}
-.game-info{
-  margin-top:30px;
-}
-.game-pic {
-  width:500px;
-  border: 3px solid black;
-}
-.snake-pic{
-  width:500px;
-  height:200px;
-  border: 3px solid black;
-}
-.snake-pic:hover {
-  filter:contrast(200%);
-}
-.game-pic:hover{
-  filter:contrast(200%);
-}
-.game-title{
-  font-family: sans-serif;
-  color:Red;
-  font-style: italic;
-}
-.game-header{
-  font-size:60px;
-  color:black;
-}
+
 .donation-container {
 	height: 1000px;
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 500;
 	font-size: 12px;
 	text-transform: uppercase;
-	margin-top: 30px;
+	margin-top: 500px;
 }
 
 .donation-box {
@@ -419,4 +385,8 @@ button {
 	font-weight: bold;
 	text-decoration: underline;
 	font-style: normal;
+}
+
+.button.active {
+  transform:rotate(180deg);
 }
