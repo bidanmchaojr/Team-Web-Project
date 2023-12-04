@@ -28,7 +28,7 @@ background-size:10000px;
   color:green;
   font-family:monospace;
   font-style:bold;
-  margin-top:50px;
+  display:inline;
 
 }
 img.animal {
@@ -389,4 +389,9 @@ to{
 
 .button.active {
   transform:rotate(180deg);
+}
+.main-logo {
+  display:flex;
+  margin-top: 50px;
+  
 }
