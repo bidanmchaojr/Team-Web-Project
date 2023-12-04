@@ -386,3 +386,7 @@ to{
 	text-decoration: underline;
 	font-style: normal;
 }
+
+.button.active {
+  transform:rotate(180deg);
+}
