@@ -25,7 +25,7 @@ background-size:10000px;
 }
 .home-header {
   font-size:100px;
-  color:green;
+  color:#00b300;
   font-family:monospace;
   font-style:bold;
   display:inline;
@@ -42,7 +42,7 @@ width:1200px;
 }
 
 .topnav {
-    background-color: #333;
+    background-color: green;
     overflow: hidden;
   }
 
@@ -394,4 +394,12 @@ to{
   display:flex;
   margin-top: 50px;
   
+}
+.slogan {
+	color:#003300;
+	font-family:monospace;
+	font-size:30px;
+}
+.information {
+	width:500px;
 }
