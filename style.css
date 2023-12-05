@@ -392,7 +392,7 @@ to{
 }
 .main-logo {
   display:flex;
-  margin-top: 50px;
+  margin-top: 20px;
   
 }
 .slogan {
@@ -401,5 +401,12 @@ to{
 	font-size:30px;
 }
 .information {
-	width:500px;
+	width:1500px;
+	font-family:monospace;
+	font-size:20px;
+	word-spacing: 10px;
+	
+}
+#arrow{
+	font-size:30px;
 }
