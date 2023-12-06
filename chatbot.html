@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tree Chat</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        #chat-container {
+            background-color: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            width: 300px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        #chat-messages {
+            padding: 10px;
+            height: 200px;
+            overflow-y: auto;
+        }
+
+        #input-container {
+            display: flex;
+            padding: 10px;
+            background-color: #eee;
+        }
+
+        #user-input {
+            flex: 1;
+            padding: 8px;
+            border: none;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+
+        #send-button {
+            background-color: #4caf50;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        #chatbot-page{
+            background-image: url("images/enchantedforest.jpg");
+            background-repeat: no-repeat;
+            background-size:1980px;
+        }
+        .tree-title{
+            color:black;
+            font-style:bold;
+            background-color: white;
+            border: 5px solid black;
+            padding: 15px;
+        }
+    </style>
+</head>
+<body id="chatbot-page">
+    <div class = "tree-title">
+        <h1>Talk with the Tree!</h1>
+    </div>
+    <br>
+    <div id="chat-container">
+        <div id="chat-messages"></div>
+        <div id="input-container">
+            <input type="text" id="user-input" placeholder="Type your message...">
+            <button id="send-button" onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+
+    <script>
+        function sendMessage() {
+            var userInput = document.getElementById("user-input").value;
+            var chatMessages = document.getElementById("chat-messages");
+
+            // Display user message
+            chatMessages.innerHTML += '<div>User: ' + userInput + '</div>';
+
+            // Display tree's response
+            setTimeout(function() {
+                chatMessages.innerHTML += '<div>Tree: ...</div>';
+            }, 500);
+        }
+    </script>
+</body>
+</html>
