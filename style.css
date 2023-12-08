@@ -28,7 +28,20 @@ background-size:10000px;
   color:#00b300;
   font-family:monospace;
   font-style:bold;
-  display:inline;
+  display:inline;}
+
+  .contact-header {
+	font-size:100px;
+	color:#369136;
+	font-family:'Times New Roman', Times, serif;
+	font-style:bold;
+	display:inline;}
+
+	.contact-body {
+		font-size:30px;
+		color:#ffffff;
+		font-family:'Times New Roman', Times, serif;
+		display:inline;
 
 }
 img.animal {
