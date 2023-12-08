@@ -52,14 +52,16 @@
             border-radius: 5px;
             cursor: pointer;
         }
-        #chatbot-page{
+
+        #chatbot-page {
             background-image: url("images/enchantedforest.jpg");
             background-repeat: no-repeat;
-            background-size:1980px;
+            background-size: 1980px;
         }
-        .tree-title{
-            color:black;
-            font-style:bold;
+
+        .tree-title {
+            color: black;
+            font-style: bold;
             background-color: white;
             border: 5px solid black;
             padding: 15px;
@@ -67,7 +69,7 @@
     </style>
 </head>
 <body id="chatbot-page">
-    <div class = "tree-title">
+    <div class="tree-title">
         <h1>Talk with the Tree!</h1>
     </div>
     <br>
@@ -80,6 +82,23 @@
     </div>
 
     <script>
+        function getRandomTreeResponse() {
+            const responses = [
+                "Hi.",
+                "The forest is full of secrets.",
+                "What is the sound of one leaf falling?",
+                "I've seen many seasons come and go.",
+                "Nature has its own language.",
+                "Deep roots keep me grounded.",
+                "Listen to the whispers of the wind.",
+                "The forest is a symphony of life.",
+                "Every tree has a story to tell.",
+                "In the heart of the woods, magic resides."
+            ];
+            const randomIndex = Math.floor(Math.random() * responses.length);
+            return responses[randomIndex];
+        }
+
         function sendMessage() {
             var userInput = document.getElementById("user-input").value;
             var chatMessages = document.getElementById("chat-messages");
@@ -87,9 +106,13 @@
             // Display user message
             chatMessages.innerHTML += '<div>User: ' + userInput + '</div>';
 
+            // Clear user input
+            document.getElementById("user-input").value = '';
+
             // Display tree's response
-            setTimeout(function() {
-                chatMessages.innerHTML += '<div>Tree: ...</div>';
+            setTimeout(function () {
+                const treeResponse = getRandomTreeResponse();
+                chatMessages.innerHTML += '<div>Tree: ' + treeResponse + '</div>';
             }, 500);
         }
     </script>
