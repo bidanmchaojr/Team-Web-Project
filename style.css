@@ -421,3 +421,9 @@ to{
 .chatbot-link:hover{
 	background-color:lightgray;
 }
+
+.contact-link {
+	font-size:45px;
+	border: 5px inset;
+	width:25%;
+	background-color:white;}
