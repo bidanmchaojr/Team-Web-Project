@@ -447,3 +447,6 @@ to{
 .homepage-link{
 	width:100px;
 }
+.homepage-link:hover{
+	filter:brightness(50%);
+}
