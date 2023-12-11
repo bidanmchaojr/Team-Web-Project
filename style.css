@@ -436,10 +436,17 @@ to{
 }
 
 .contact-link {
-	font-size:45px;
+	font-size:30px;
 	border: 5px inset;
-	width:25%;
-	background-color:white;}
+	width:15%;
+	background-color:white;
+}
+.contact-link:hover{
+	background-color:lightgray;
+}
 .homepage-link{
 	width:100px;
+}
+.homepage-link:hover{
+	filter:brightness(50%);
 }
