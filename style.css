@@ -450,3 +450,6 @@ to{
 .homepage-link:hover{
 	filter:brightness(50%);
 }
+.filtered {
+	filter: brightness(50%);
+}
