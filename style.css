@@ -362,7 +362,7 @@ to{
 }
 
 .checkbox:active, .checkbox:checked:active {
-	
+	filter:brightness(50%);
 }
 
 .checkbox:checked {
