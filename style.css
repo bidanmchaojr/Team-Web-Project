@@ -438,8 +438,7 @@ to{
 	font-size:20px;
 	border: 2px solid;
 	width:15%;
-	background-color:white;
-	margin:0;
+	background-color:#3c551e;
 	padding:0;
 }
 
@@ -454,5 +453,5 @@ to{
 }
 .contact-info{
 	text-decoration: none;
-	color:inherit;
+	color:white;
 }
