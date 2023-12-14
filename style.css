@@ -435,14 +435,14 @@ to{
 }
 
 .contact-link {
-	font-size:30px;
-	border: 5px inset;
+	font-size:20px;
+	border: 2px solid;
 	width:15%;
 	background-color:white;
+	margin:0;
+	padding:0;
 }
-.contact-link:hover{
-	background-color:lightgray;
-}
+
 .homepage-link{
 	width:100px;
 }
@@ -451,4 +451,8 @@ to{
 }
 .filtered {
 	filter: brightness(50%);
+}
+.contact-info{
+	text-decoration: none;
+	color:inherit;
 }
