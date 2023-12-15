@@ -395,7 +395,8 @@ to{
 
 .confirm i {
 	font-weight: bold;
-	text-decoration: underline;
+	text-decoration: none;
+	color:inherit;
 	font-style: normal;
 }
 
@@ -454,4 +455,11 @@ to{
 .contact-info{
 	text-decoration: none;
 	color:white;
+}
+.donate-now{
+	text-decoration: none;
+	color:inherit;
+}
+.donate-now:hover{
+	color:#F2F2F2;
 }
