@@ -9,18 +9,94 @@
         <a href="home.html" style="text-decoration: none;" width = 200px; height = 200px;>
             <img class="homepage-link" src="images/Nitimalogogreen.png">
           </a> 
-          <br>
-          <br>
-          <br>
-          <center><h1 class = contact-header>Contact Page</h1></center>
-          <br>
-          <br>
-          <br>
-         <center> <p class = contact-body>For Business Inquiries, email us at <u>ProjectNitima@gmail.com</u></p></center>
-         <br>
-         <br>
-         <center><p class = contact-body>For Problems with the site or questions about purchases call our customer support line</p></center>
-         <br>
-         <center><p class = contact-body><u>614-816-8992</u></p></center>
+          <!DOCTYPE html>
+          <html lang="en">
+          <head>
+              <meta charset="UTF-8">
+              <meta name="viewport" content="width=device-width, initial-scale=1.0">
+              <title>Contact Us</title>
+              <style>
+                  body {
+                      font-family: Arial, sans-serif;
+                      margin: 20px;
+                  }
+          
+                  label {
+                      display: block;
+                      margin-bottom: 8px;
+                  }
+          
+                  input, textarea {
+                      width: 20%;
+                      padding: 8px;
+                      margin-bottom: 5px;
+                      margin-left:200px;
+                      box-sizing: border-box;
+                      font-family:Arial, sans-serif;
+                  }
+          
+                  button {
+                      background-color: #4CAF50;
+                      color: white;
+                      padding: 10px 15px;
+                      border: none;
+                      border-radius: 4px;
+                      margin-left: 200px;
+                      cursor: pointer;
+                      font-style:bold;
+                      margin-top:25px;
+                  }
+          
+                  button:hover {
+                      background-color: #45a049;
+                  }
+                  .info {
+                    color:white;
+                    margin-left:200px;
+                    font-family:'Times New Roman', Times, serif;
+                    font-style:bold;
+                  }
+                  h2 {
+                    color:white;
+                    margin-left:200px;
+                    margin-bottom:20px;
+                    font-size:35px;
+                  }
+                  hr{
+                    width:100px;
+                    margin-left:200px;
+                    margin-bottom:35px;
+                  }
+              </style>
+          </head>
+          <body>
+          
+              <h2>Contact Us</h2>
+              <hr>
+          
+              <form action="#" method="post">
+                  <h4 class="info">Your Name</h4>
+                  <label for="name">Name:</label>
+                  <input type="text" id="name" name="name" required>
+                  
+                  <h4 class="info">Your Phone</h4>
+                  <label for="phone">Phone Number:</label>
+                  <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+                  <small>Enter a 10-digit phone number without spaces or dashes.</small>
+                  
+                  <h4 class="info">Your Email</h4>
+                  <label for="email">Email:</label>
+                  <input type="email" id="email" name="email" required>
+                  
+                  <h4 class="info">Your Comment</h4>
+                  <label for="comments">Comments:</label>
+                  <textarea id="comments" name="comments" rows="10" required></textarea>
+                  <br>
+                  <button type="submit">Submit Contact</button>
+              </form>
+          
+          </body>
+          </html>
+          
     </body>
 </html>
