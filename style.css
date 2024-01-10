@@ -463,3 +463,13 @@ to{
 .donate-now:hover{
 	color:#F2F2F2;
 }
+.socials
+{
+	color:white;
+	font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	margin: 100px;
+}
+.icons {
+	width:50px;
+	height:50px;
+}
