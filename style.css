@@ -441,6 +441,7 @@ to{
 	width:15%;
 	background-color:#3c551e;
 	padding:0;
+	display:inline-block;
 }
 
 .homepage-link{
@@ -477,10 +478,12 @@ to{
 	height:50px;
 	margin-left:5px;
 	margin-right:5px;
+	display:inline-block;
 }
 .youtube {
 	width:60px;
 	height:50px;
+	display:inline-block;
 }
 
 .cta-button {
@@ -491,7 +494,6 @@ to{
 	text-decoration: none;
 	border-radius: 5px;
 }
-
 .info-box {
 	background-color: #fff;
 	font-family:Verdana, Geneva, Tahoma, sans-serif;
@@ -501,6 +503,30 @@ to{
 	padding: 20px;
 	max-width: 400px;
 	width: 100%;
-	margin-top:300px;
+	display:inline-block;
+	margin-top:0x;
+	width:300px;
+	margin-left:70px;
+}
+.projects{
+	color:white;
+	font-size:70px;
+	margin-top:280px;
+	text-align: center;
+	font-family:sans-serif;
+}
+.first-box {
+	background-color: #fff;
+	font-family:Verdana, Geneva, Tahoma, sans-serif;
+	font-style:bold;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	border-radius: 10px;
+	padding: 20px;
+	max-width: 400px;
+	width: 100%;
+	display:inline-block;
+	margin-top:0x;
+	width:300px;
+	margin-left:150px;
 }
 
