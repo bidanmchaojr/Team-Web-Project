@@ -205,11 +205,11 @@ to{
 }
 
 .donation-box .amount {
-	width: 30%;
+	width: 40%;
 	display: block;
 	position: absolute;
-	top: 60px;
-	right: 15px;
+	top: 360px;
+	right: 145px;
 }
 
 .donation-box .amount .button {
@@ -239,7 +239,7 @@ to{
 }
 
 .donation-box .amount .button input {
-	min-width: 34px;
+	min-width: 60px;
 	font-size: 20px;
 	font-weight: 500;
 	border: none;
